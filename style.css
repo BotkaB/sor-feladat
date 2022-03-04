@@ -1,0 +1,200 @@
+body{
+    background-image: url(design/teglafal.jpg);
+    
+}   
+
+h1{ 
+    font-size:30px;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    color:aliceblue;
+    text-align: left;
+    margin-left: 50px;
+}
+h2{
+    font-size:15px;
+    font-family:sans-serif;
+    
+    color:aliceblue;
+    text-align: left;
+    margin-left: 5px;
+   
+}
+
+
+
+main{
+    -webkit-box-shadow: 1px 2px 4px 6px rgba(235, 230, 230, 0.67); 
+    box-shadow: 1px 2px 4px 6px rgba(235, 230, 230, 0.67);
+    max-width:60%;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "h h h h h  "
+    "ar ar ar n n"
+    " f f f f f "
+    ;
+  
+}
+header{ 
+    display: flex;
+    grid-area:h;
+    text-align: center;
+    background-image:url("design/beer-new_401732638.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    height: 595px;;
+   
+    
+   
+   
+    
+    
+    
+}
+nav{ 
+    grid-area:n;
+   
+    background-color: rgb(54, 54, 54);
+
+}
+
+article{ 
+    grid-area:ar;
+    color:aliceblue;
+    background-color: rgb(27, 27, 27);
+    padding: 5px;
+    
+    
+}
+footer{ 
+    grid-area:f;
+    text-align: center;
+    background-color: rgb(87, 83, 83);
+    color: rgb(197, 194, 194);
+    
+}
+
+
+nav li{
+    list-style-type: none;
+  
+}
+nav ul{
+    padding-left: 0;
+    
+    
+    
+}
+nav a{
+    text-decoration:none ;
+    background-color: rgb(63, 59, 59);
+    text-align:center;
+    display:block;   
+    color: rgb(241, 76, 76);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width:2px;
+    border-radius:8px;
+    margin: 10px;
+    
+    
+}
+nav a:hover{
+    background-color:rgb(63, 59, 59);
+    color: rgb(77, 65, 236);
+    
+
+}
+.kepek{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px;
+    padding:20px;
+}
+article img{
+    width: 100%;
+}
+table,th,td{
+    border: 1px solid rgb(22, 21, 21);
+    text-align: center;
+    border-collapse: collapse;
+    padding:2px;
+    font-size: 15px;
+    
+}
+table{
+    max-width: 100%;
+}
+tr:nth-child(even){
+    background-color: gray;
+}
+
+#Feliratkozás label{
+
+    float: left;
+    width: 6em;
+    margin: 5px;
+    text-align: right;
+}
+
+form br {
+    clear: left;
+}
+
+
+legend {
+    padding: 10px 4px;
+}
+
+fieldset {
+   
+    border: 1px solid #3d3b3b;
+    padding: 10px;
+}
+@media screen and (max-width: 800px){
+	main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-areas:
+        "h h h"
+        "n n n"
+        "ar ar ar"
+        " f f f";
+    }
+    .kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    header{
+       
+        height: 300px;
+   
+    }
+    
+    }   
+
+@media screen and (max-width: 400px){
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "h h " 
+            "n n " 
+            "ar ar "
+            "f f ";
+        }
+        .kepek{
+            display: grid;
+            grid-template-columns: 1fr 1fr  ;
+        }
+      header{
+         
+          height:145px;
+        
+      }
+      
+        }
