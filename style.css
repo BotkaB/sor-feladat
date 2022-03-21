@@ -172,7 +172,7 @@ fieldset {
    
     }
     h1{ 
-        font-size:20px;
+        font-size:22px;
         
         margin-left: 15px;
     }
@@ -196,13 +196,13 @@ fieldset {
     }
     header{
         
-        max-height:150px;
+        max-height:180px;
         
     }
     h1{ 
-        font-size:12px;
+        font-size:14px;
         
-        margin-left: 5px;
+        margin-left: 10px;
     }
       
 }
