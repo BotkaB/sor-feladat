@@ -61,7 +61,7 @@ article{
     background-color: rgb(27, 27, 27);
     padding: 5px;
     display: block;
-    overflow: auto;
+    
     
     
 }
@@ -119,6 +119,9 @@ table,th,td{
     font-size: 15px;
     
 }
+article img{
+    width: 100%;
+}
 table{
     max-width: 100%;
 }
@@ -150,6 +153,7 @@ fieldset {
 }
 @media screen and (max-width: 800px){
 	main{
+        max-width:80%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-areas:
@@ -167,11 +171,17 @@ fieldset {
         max-height: 300px;
    
     }
+    h1{ 
+        font-size:20px;
+        
+        margin-left: 15px;
+    }
     
 }   
 
 @media screen and (max-width: 400px){
     main {
+            max-width:90%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
@@ -188,6 +198,11 @@ fieldset {
         
         max-height:150px;
         
+    }
+    h1{ 
+        font-size:12px;
+        
+        margin-left: 5px;
     }
       
 }
